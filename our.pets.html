@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Our Pets - WWF</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="imgs/logo.jpeg" alt="logo"></div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.us.html">About Us</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+         <li><a href="our.pets.html">Our Pets</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a href="supportus.html" class="button">Support us</a>
+      <button class="cart-icon-btn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 2L7.17 4H3C2.45 4 2 4.45 2 5C2 5.55 2.45 6 3 6H4.4L6.6 16.59C6.8 17.47 7.58 18.11 8.5 18.11H17.5C18.42 18.11 19.2 17.47 19.4 16.59L21.6 6H23C23.55 6 24 5.55 24 5C24 4.45 23.55 4 23 4H18.83L17 2H9ZM9 8C9.55 8 10 8.45 10 9V15C10 15.55 9.55 16 9 16C8.45 16 8 15.55 8 15V9C8 8.45 8.45 8 9 8ZM15 8C15.55 8 16 8.45 16 9V15C16 15.55 15.55 16 15 16C14.45 16 14 15.55 14 15V9C14 8.45 14.45 8 15 8Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+  <div id="cartNotification" class="cart-notification">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#4CAF50"/>
+    </svg>
+    <span>Added to cart!</span>
+  </div>
+
+  <section class="pets-hero">
+    <div class="pets-hero-slideshow">
+      <div class="hero-slide active" style="background-image: url('imgs/delfinooooooo.jpeg');"></div>
+      <div class="hero-slide" style="background-image: url('imgs/volpiiiiii.jpeg');"></div>
+      <div class="hero-slide" style="background-image: url('imgs/scimmietta.jpeg');"></div>
+  
+    <div class="pets-hero-overlay"></div>
+    <div class="pets-hero-content">
+      <h1>Our Pets</h1>
+      <p class="pets-subtitle">A small space to learn more about our dear furry friends</p>
+    </div>
+  </section>
+
+  <section class="pets-grid-section">
+    <div class="pets-grid-container">
+      <h2>Meet Our Friends</h2>
+      
+      <div class="pets-grid">
+        <div class="pet-card" onclick="openPetModal('Seal')">
+          <div class="pet-image" style="background-image: url('imgs/SEAL.JPEG');">
+            <div class="pet-overlay">
+              <h3>Polly</h3>
+              <span class="click-hint">Click to learn more</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pet-card" onclick="openPetModal('Lion')">
+          <div class="pet-image" style="background-image: url('imgs/PUPPY.JPEG');">
+            <div class="pet-overlay">
+              <h3>Lola</h3>
+              <span class="click-hint">Click to learn more</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pet-card" onclick="openPetModal('African Elephant')">
+          <div class="pet-image" style="background-image: url('imgs/ele.jpeg');">
+            <div class="pet-overlay">
+              <h3>Jerry</h3>
+              <span class="click-hint">Click to learn more</span>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="pet-card" onclick="openPetModal('Parrot')">
+          <div class="pet-image" style="background-image: url('imgs/rio.jpeg');">
+            <div class="pet-overlay">
+              <h3>Rio</h3>
+              <span class="click-hint">Click to learn more</span>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="pet-card" onclick="openPetModal('Panda')">
+          <div class="pet-image" style="background-image: url('imgs/giantpanda.jpeg');">
+            <div class="pet-overlay">
+              <h3>Rush</h3>
+              <span class="click-hint">Click to learn more</span>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="pet-card" onclick="openPetModal('Rhinoceros')">
+          <div class="pet-image" style="background-image: url('imgs/rinorion.jpeg');">
+            <div class="pet-overlay">
+              <h3>Dino</h3>
+              <span class="click-hint">Click to learn more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="adopt-cta-section">
+    <div class="adopt-cta-content">
+      <h2>Do you want one right now with you?</h2>
+      <div class="arrow-down">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="plush-shop-section">
+    <div class="plush-shop-container">
+      <h2>Adopt a Plush Friend</h2>
+      <p class="shop-subtitle">Support wildlife conservation while bringing home an adorable companion</p>
+      
+      <div class="plush-grid">
+   
+        <div class="plush-card">
+          <div class="plush-image" style="background-image: url('imgs/sealplush.jpeg');">
+            <span class="plush-badge">Limited Edition</span>
+          </div>
+          <div class="plush-info">
+            <h3>Seal Plush</h3>
+            <p class="plush-description">Soft and cuddly Arctic seal plush toy</p>
+            <div class="plush-price">€25.00</div>
+            <button class="plush-buy-btn">Add to Cart</button>
+          </div>
+        </div>
+
+    
+        <div class="plush-card">
+          <div class="plush-image" style="background-image: url('imgs/lionplush.jpeg');">
+            <span class="plush-badge"> Limited Edition </span>
+          </div>
+          <div class="plush-info">
+            <h3>Lion Plush</h3>
+            <p class="plush-description">Brave and majestic lion plush toy</p>
+            <div class="plush-price">€28.00</div>
+            <button class="plush-buy-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="plush-card">
+          <div class="plush-image" style="background-image: url('imgs/elephantplus.jpeg');">
+          </div>
+          <div class="plush-info">
+            <h3>Elephant Plush</h3>
+            <p class="plush-description">Gentle giant elephant plush toy</p>
+            <div class="plush-price">€30.00</div>
+            <button class="plush-buy-btn">Add to Cart</button>
+          </div>
+        </div>
+
+       
+        <div class="plush-card">
+          <div class="plush-image" style="background-image: url('imgs/parrotplush.jpeg');">
+            <span class="plush-badge">New</span>
+          </div>
+          <div class="plush-info">
+            <h3>Parrot Plush</h3>
+            <p class="plush-description">Colorful and vibrant parrot plush toy</p>
+            <div class="plush-price">€24.00</div>
+            <button class="plush-buy-btn">Add to Cart</button>
+          </div>
+        </div>
+
+    
+        <div class="plush-card">
+          <div class="plush-image" style="background-image: url('imgs/pandaplush.jpeg');">
+          </div>
+          <div class="plush-info">
+            <h3>Panda Plush</h3>
+            <p class="plush-description">Adorable giant panda plush toy</p>
+            <div class="plush-price">€27.00</div>
+            <button class="plush-buy-btn">Add to Cart</button>
+          </div>
+        </div>
+
+    
+        <div class="plush-card">
+          <div class="plush-image" style="background-image: url('imgs/RINORIBORINO.\ JPEG.png');">
+          </div>
+          <div class="plush-info">
+            <h3>Rhinoceros Plush</h3>
+            <p class="plush-description">Strong and powerful rhino plush toy</p>
+            <div class="plush-price">€29.00</div>
+            <button class="plush-buy-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-footer">
+        <p>100% of profits go directly to wildlife conservation projects</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="petModal" class="pet-modal">
+    <div class="pet-modal-content">
+      <span class="pet-modal-close" onclick="closePetModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalText"></div>
+    </div>
+  </div>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <p>We use cookies to improve your experience on our site. By continuing to browse, you accept our use of cookies.</p>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="cookie-accept">Accept</button>
+        <button onclick="rejectCookies()" class="cookie-reject">Reject</button>
+      </div>
+    </div>
+  </div>
+
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <p>We use cookies to improve your experience on our site. By continuing to browse, you accept our use of cookies.</p>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="cookie-accept">Accept</button>
+        <button onclick="rejectCookies()" class="cookie-reject">Reject</button>
+      </div>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Support WWF</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="imgs/logo.jpeg" alt="logo"></div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <li><a href="our.pets.html">Our Pets</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a href="supportus.html" class="button">Support us</a>
+    </div>
+  </header>
+
+
+  <main class="support-us-container">
+   <section class="sostieni-hero-large">
+  <div class="hero-overlay">
+    <div class="hero-content-wrapper">
+      <h1>Give Wildlife a future</h1>
+      <p class="sostieni-intro">Give a little love to wildlife! By adopting an animal with WWF, you help protect endangered species and their homes—while gaining a furry (or feathery!) friend in spirit.</p>
+      <a href="#adozioni" class="hero-cta-btn">Adopt now</a>
+    </div>
+  </div>
+</section>
+
+    <section class="donation-options" id="adozioni">
+      <h2>Choose how to help us</h2>
+
+      <div class="donation-simple">
+        <div class="donation-box">
+          <div class="donation-box-text">
+            <h3>One-time donation</h3>
+            <p>Support our conservation projects with a single contribution. Every donation helps protect endangered species and their habitats.</p>
+          </div>
+          <button class="donate-btn" onclick="donaOra()">Donate now</button>
+        </div>
+
+        <div class="donation-box">
+          <div class="donation-box-text">
+            <h3>Monthly donation</h3>
+            <p>Become a regular supporter with a small monthly contribution. Your ongoing support ensures continuous protection for wildlife worldwide.</p>
+          </div>
+          <button class="donate-btn" onclick="donaMensile()">Donate monthly</button>
+        </div>
+
+        <div class="donation-box">
+          <div class="donation-box-text">
+            <h3>Adopt an animal</h3>
+            <p>Symbolically adopt an endangered species like a panda, tiger, or polar bear. Your adoption helps fund conservation efforts to save these magnificent animals.</p>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <li><a href="our.pets.html">Our Pets</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a href="supportus.html" class="button">Support us</a>
+    </div>
+  </header>
+          </div>
+          <button class="donate-btn" onclick="adottaAnimale()">Adopt</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-section">
+      <h2>What we do with your contribution</h2>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <h3>Habitat protection</h3>
+          <p>We protect critical ecosystems including rainforests, oceans, and wetlands. Your support helps preserve natural habitats for countless species worldwide.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Species conservation</h3>
+          <p>We implement targeted programs to protect endangered species like tigers, elephants, and pandas. Every contribution helps prevent extinction and restore populations.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Climate change mitigation</h3>
+          <p>We lead global initiatives to reduce carbon emissions, promote renewable energy, and combat climate change. Your support funds sustainable solutions for our planet's future.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Environmental education</h3>
+          <p>We develop educational programs for schools and communities worldwide. Your donation helps raise awareness and inspire the next generation of environmental stewards.</p>
+        </div>
+      </div>
+    </section>
+
+  <section class="other-ways">
+  <h2>OTHER WAYS TO HELP US</h2>
+  <div class="ways-grid-white">
+    <div class="way-card-white">
+      <h3>Become a volunteer</h3>
+      <p>Actively participate in our local projects</p>
+      <a href="#" class="link-arrow">Learn more →</a>
+    </div>
+    
+    <div class="way-card-white">
+      <h3>Leave a legacy</h3>
+      <p>A gesture that protects nature for future generations</p>
+      <a href="#" class="link-arrow">More information →</a>
+    </div>
+    
+    <div class="way-card-white">
+      <h3>Corporate donations</h3>
+      <p>Strategic partnerships for sustainability projects</p>
+      <a href="#" class="link-arrow">Contact us →</a>
+    </div>
+  </div>
+</section>
+
+<section id="form-donazione" class="form-donazione-section">
+    <div class="form-container">
+      <h2 id="formTitle">Complete your donation</h2>
+      <p id="formDescription">Enter your details to proceed with the donation to WWF.</p>
+      
+      <form class="donation-form">
+        <div class="form-group">
+          <label for="nome">Name and Surname *</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Phone</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+
+        <div class="form-group">
+          <label for="importo">Amount (€) *</label>
+          <input type="number" id="importo" name="importo" min="5" value="20" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Type of donation *</label>
+          <select id="tipo" name="tipo" required>
+            <option value="singola">one-time donation</option>
+            <option value="mensile">monthly donation</option>
+            <option value="adozione">animal adoption</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="messaggio">Messagge (not obbligatory)</label>
+          <textarea id="messaggio" name="messaggio" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Sent request</button>
+      </form>
+    </div>
+  </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Are donations tax-deductible?</summary>
+          <p>This depends on the laws of your country and the legal status of the organization. If the organization is registered as a non-profit or charity, your donation may be tax-deductible. Please check local regulations or consult a tax professional to confirm.</p>
+        </details>
+        <details>
+          <summary>How can I cancel a monthly donation?</summary>
+          <p>You can cancel your monthly donation at any time. Usually, this can be done by:
+           Logging into your donor account and managing your subscription, or
+           Contacting the organization’s support team, who will assist you with the cancellation.</p>
+        </details>
+        <details>
+          <summary>What does symbolic adoption include?</summary>
+          <p>A symbolic adoption typically includes non-physical benefits such as:
+             -A certificate of adoption
+             -Periodic updates, photos, or stories about the animal, project, or cause
+             -Information about how your contribution supports ongoing conservation or humanitarian efforts
+             -No actual ownership or possession is transferred.</p>
+        </details>
+        <details>
+          <summary>Are payments secure?</summary>
+          <p>Yes. All payments are processed through encrypted and secure payment systems.
+Reputable organizations use industry-standard protections such as SSL encryption and verified payment processors to ensure that your personal and financial information stays safe.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+   <footer>
+    <p>© 2025 WWF Italia</p>
+  </footer>
+    <div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>We use cookies to improve your experience on our site. By continuing to browse, you accept our use of cookies.</p>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()" class="cookie-accept">Accept</button>
+      <button onclick="rejectCookies()" class="cookie-reject">Reject</button>
+    </div>
+  </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html> 

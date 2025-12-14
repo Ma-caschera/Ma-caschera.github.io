@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="pandoc">
+	<title>mypitch</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reset.css">
+	<link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/reveal.css">
+	<style>
+		.reveal .sourceCode {  /* see #7635 */
+			overflow: visible;
+		}
+		/* Default styles provided by pandoc.
+		** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+		*/
+		code{white-space: pre-wrap;}
+		span.smallcaps{font-variant: small-caps;}
+		div.columns{display: flex; gap: min(4vw, 1.5em);}
+		div.column{flex: auto; overflow-x: auto;}
+		div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+		/* The extra [class] is a hack that increases specificity enough to
+			 override a similar rule in reveal.js */
+		ul.task-list[class]{list-style: none;}
+		ul.task-list li input[type="checkbox"] {
+			font-size: inherit;
+			width: 0.8em;
+			margin: 0 0.8em 0.2em -1.6em;
+			vertical-align: middle;
+		}
+		.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+	</style>
+	<link rel="stylesheet" href="https://unpkg.com/reveal.js@^5/dist/theme/dracula.css" id="theme">
+	<link rel="stylesheet" href="./mystyle.css"/>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+		<section class="slide level2">
+			<h2>Pitch Presentation</h2>
+			<p>Welcome!<br>This presentation illustrates the redesign of a WWF website for the Web Communication exam.<br><br><strong>Goal:</strong> Effectively communicate the mission and features of the new site.<br></p>
+			<div style="text-align:center; margin: 20px 0;">
+			</div>
+		</section>
+		<section class="slide level2">
+			<div style="text-align:center; margin: 30px 0;">
+				<img src="imagg/climate change.jpeg" alt="Opening Image" style="max-width: 50%; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+			</div>
+			<p style="text-align:center; font-size:1.2em;">“One planet. One chance.”<br>Think about our world and future!</p>
+			<h3 id="web-communication-exam">Web Communication Exam</h3>
+		</section>
+
+<section id="file-structure" class="slide level2">
+<h2>File Structure</h2>
+<pre><code>esame web/
+├── index.html
+├── about us.html
+├── contacts.html
+├── support us.html
+├── our pets.html
+├── style.css (2049 lines)
+├── javascript.js (247 lines)
+└── imgs/
+		└── (16 images)</code></pre>
+</section>
+
+<section id="project-overview" class="slide level2">
+<h2>Project Overview</h2>
+<p>A complete WWF conservation website with 5 pages:</p>
+<ul>
+<li>Home</li>
+<li>About Us</li>
+<li>Contacts</li>
+<li>Support Us</li>
+<li>Our Pets</li>
+</ul>
+<p>Built with HTML5, CSS3, and JavaScript</p>
+</section>
+
+<section class="slide level2">
+			<h2>Technical Features</h2>
+			<ul>
+				<li><strong>HTML5</strong></li>
+				<li>Semantic markup; Consistent naming conventions; Commented sections</li>
+				<li><strong>CSS3</strong></li>
+				<li>Modern styling with animations; Organized by page sections</li>
+				<li><strong>JavaScript</strong></li>
+				<li>Interactive functions; Centralized in one file</li>
+			</ul>
+		</section>
+   
+		<section class="slide level2">
+			<h2>Page Structure</h2>
+			<h3 id="homepage-index.html">1. Homepage (index.html)</h3>
+			<ul>
+				<li>Hero section with background image</li>
+				<li>Floating action buttons (Video, Donate)</li>
+				<li>Cookie banner</li>
+				<li>Navigation menu</li>
+			</ul>
+		</section>
+
+	 <section class="slide level2">
+	<h2> User Experience</h2>
+	<div style="text-align:center; margin: 5px 0;">
+		<img src="imagg/layout.jpeg.jpg" alt="User Experience" style="max-width: 60%; border-radius: 5px;">
+	</div>
+	<p style="text-align:center;">Example of a simplified and intuitive layout.</p>
+	<p> A simplified home section in which a user can easly navigate and find key information</p>
+</section>
+
+<section id="page-structure-1" class="slide level2">
+<h2>Page Structure</h2>
+<h3 id="about-us">2. About Us</h3>
+<ul>
+<li>Mission statement section</li>
+<li>Interactive history timeline slider</li>
+<li>Our values grid</li>
+<li>Video link section</li>
+<li>Newsletter signup</li>
+</ul>
+</section>
+
+ <section class="slide level2">
+	<h2> We are WWF </h2>
+	<div style="text-align:center; margin: 5px 0;">
+		<img src="imagg/history.jpeg" alt="User Experience" style="max-width: 40%; border-radius: 5px;">
+	</div>
+	<p style="text-align:center;">Join in our family!</p>
+	<p> A small piece of our heart to know more about us, who we are, what we do, our story.</p>
+</section>
+
+<section id="page-structure-2" class="slide level2">
+<h2>Page Structure</h2>
+<h3 id="contacts">3. Contacts</h3>
+<ul>
+<li>Contact form with validation</li>
+<li>Social media links with SVG icons</li>
+<li>Location information</li>
+<li>reCAPTCHA integration</li>
+</ul>
+</section>
+<section id="page-structure-4" class="slide level2">
+<h2>Page Structure</h2>
+<h3 id="our-pets">5. Our Pets</h3>
+<ul>
+<li>Ken Burns effect slideshow</li>
+<li>Pet cards grid (6 animals)</li>
+<li>Interactive modals with animal info</li>
+<li>Plush toy shop with cart system</li>
+</ul>
+</section>
+ <section class="slide level2">
+	<h2> Help with just one click</h2>
+	<div style="text-align:center; margin: 5px 0;">
+		<img src="imagg/giantpanda.jpeg" alt="User Experience" style="max-width: 30%; border-radius: 5px;">
+		<img src="imagg/girbaby.jpeg" alt="User Experience" style="max-width: 30%; border-radius: 5px;">
+		<img src="imagg/fochetta.jpeg" alt="User Experience" style="max-width: 30%; border-radius: 5px;">
+		<img src="imagg/tigrotto.jpeg" alt="User Experience" style="max-width: 30%; border-radius: 5px;">
+</div>
+	<p style="text-align:center;">Meet some adoptable pets.</p>
+	<p> </p>
+</section>
+
+<section id="page-structure-3" class="slide level2">
+<h2>Page Structure</h2>
+<h3 id="support-us">4. Support Us</h3>
+<ul>
+<li>Three donation options (one-time, monthly, adoption)</li>
+<li>Impact cards showing conservation work</li>
+<li>Donation form</li>
+<li>Other ways to help section</li>
+</ul>
+</section>
+
+<section class="slide level2">
+	<h2> Remember, if you want, you can!</h2>
+	<div style="text-align:center; margin: 5px 0;">
+		<img src="imagg/donation.jpeg" alt="User Experience" style="max-width: 50%; border-radius: 5px;">
+		</div>
+</section>
+
+
+<section id="design-choices" class="slide level2">
+<h2>Design Choices</h2>
+<h3 id="color-scheme">Color Scheme</h3>
+<ul>
+<li>White backgrounds (#ffffff)</li>
+<li>Light blue accents (#e3f2fd)</li>
+<li>Blue buttons (#0077ff, #2776dc)</li>
+<li>green background shadows rgba(50, 255, 173, 0.9)</li>
+<li>Black text (#000000)</li>
+<li>Clean, modern aesthetic</li>
+</ul>
+</section>
+<section id="technologies-summary" class="slide level2">
+<h2>Technologies Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML5</td>
+<td>Structure &amp; content</td>
+</tr>
+<tr>
+<td>CSS3</td>
+<td>Styling &amp; animations</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>Interactivity</td>
+</tr>
+<tr>
+<td>SVG</td>
+<td>Icons &amp; graphics</td>
+</tr>
+<tr>
+<td>localStorage</td>
+<td>Cookie preferences</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="conclusion" class="slide level2" style="text-align: center;">
+	<h2 style="text-align: center;">Conclusion</h2>
+	<p style="text-align: center;">
+		A complete, functional wildlife conservation website demonstrating:<br>
+		&bull; Multi-page structure<br>
+		&bull; Interactive features<br>
+		&bull; Modern design<br>
+		&bull; Clean code organization<br>
+		&bull; User-friendly interface
+	</p>
+</section>
+<section id="thank-you" class="slide level2">
+<h2>Thank You!</h2>
+<img src="imagg/orsettochealuta.jpeg" alt="User Experience" style="max-width: 50%; border-radius: 5px;">
+<p><strong>Project by:</strong> [Maria Antonietta Caschera]<br />
+<strong>Course:</strong> Web Communication<br />
+<strong>Year:</strong> 2025/2026</p>
+</section>
+		</div>
+	</div>
+	<script src="https://unpkg.com/reveal.js@^5/dist/reveal.js"></script>
+<script src="https://unpkg.com/reveal.js@^5/plugin/notes/notes.js"></script>
+<script src="https://unpkg.com/reveal.js@^5/plugin/search/search.js"></script>
+<script src="https://unpkg.com/reveal.js@^5/plugin/zoom/zoom.js"></script>
+<script src="reveal.js"></script>
+		</body>
+</html>

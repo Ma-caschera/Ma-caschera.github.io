@@ -1,0 +1,53 @@
+// reveal.js - Reveal.js config moved from HTML
+
+// Full list of configuration options available at:
+// https://revealjs.com/config/
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  progress: true,
+  slideNumber: false,
+  showSlideNumber: 'all',
+  hash: true,
+  hashOneBasedIndex: false,
+  respondToHashChanges: true,
+  history: false,
+  keyboard: true,
+  overview: true,
+  disableLayout: false,
+  center: true,
+  touch: true,
+  loop: false,
+  rtl: false,
+  navigationMode: 'default',
+  shuffle: false,
+  fragments: true,
+  fragmentInURL: true,
+  embedded: false,
+  help: true,
+  pause: true,
+  showNotes: false,
+  autoPlayMedia: null,
+  preloadIframes: null,
+  autoSlide: 0,
+  autoSlideStoppable: true,
+  autoSlideMethod: null,
+  defaultTiming: null,
+  mouseWheel: false,
+  display: 'block',
+  hideInactiveCursor: true,
+  hideCursorTime: 5000,
+  previewLinks: false,
+  transition: 'convex',
+  transitionSpeed: 'default',
+  backgroundTransition: 'fade',
+  viewDistance: 3,
+  mobileViewDistance: 2,
+  plugins: [
+    RevealNotes,
+	RevealSearch,
+	RevealZoom
+  ]
+});
