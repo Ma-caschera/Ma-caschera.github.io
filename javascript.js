@@ -38,7 +38,7 @@ function goToSlide(slideIndex) {
 
 // Modal functionality
 function openModal(year, imgSrc, description) {
-    // TODO: maybe add fade in animation?
+   
     document.getElementById('modal').style.display = 'flex';
     document.getElementById('modalYear').textContent = year;
     document.getElementById('modalImg').src = imgSrc;
@@ -107,7 +107,7 @@ function rejectCookies() {
 if (document.querySelector('.hero-slide')) {
     var slides = document.querySelectorAll('.hero-slide');
     var currentSlideIndex = 0;
-    // tried 3000ms but was too fast
+   
 
     function nextSlide() {
         slides[currentSlideIndex].classList.remove('active');
@@ -206,7 +206,7 @@ function closePetModal() {
 }
 
 // Cart functionality
-var cartCount = 0;  // keeps track of items
+var cartCount = 0;  
 
 function addToCart(itemName, price) {
     cartCount++;
@@ -216,7 +216,7 @@ function addToCart(itemName, price) {
 function showCartNotification() {
     const notification = document.getElementById('cartNotification');
     if (notification) {
-        // console.log('showing notification');
+      
         notification.classList.add('show');
         setTimeout(function() {
             notification.classList.remove('show');
@@ -227,7 +227,7 @@ function showCartNotification() {
 // Buy buttons  
 document.addEventListener('DOMContentLoaded', function() {
     const buyButtons = document.querySelectorAll('.plush-buy-btn');
-    // this part took forever to figure out
+ 
     buyButtons.forEach(function(button) {
         button.addEventListener('click', function() {
             const card = this.closest('.plush-card');
@@ -247,4 +247,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
 });
