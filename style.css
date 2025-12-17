@@ -1026,6 +1026,9 @@ p{
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
+  background: #e3f2fd;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
 }
 
 .faq-section h2{
@@ -2038,6 +2041,7 @@ select option {
   margin: 0;
   font-style: italic;
 }
+
 
 
 
